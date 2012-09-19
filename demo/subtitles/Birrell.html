@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <script src="./popcorn-complete.min.js" type="text/javascript"></script>
+    <script src="./jquery-1.7.2.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1 id="title"></h1>
+    <div id="date"></div>
+    <div style="padding:1em">
+    <audio controls="controls" id="ourvideo">
+      <source src="./Birrell_JM_and_AW.mp3" type="audio/mp3">
+      <source src="./Birrell_JM_and_AW.ogg" type="audio/ogg">
+    </audio>
+    <div id="subtitles"></div>
+        <div id="speaker"></div>
+        <div id="speech"></div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var speakers;
+        $.getJSON("./Birrell_Speakers.json", function(data) {
+            speakers = data;
+        });
+
+        $.getJSON("./Birrell.json", function(data) {
+            console.log(data);
+            $("#title").text(data.title);
+            $("#date").text(data.date);
+
+            var popcorn = Popcorn("#ourvideo");
+            popcorn.play();
+            for (var i = 0; i < data.exchanges.length - 1; i++) {
+                var start = Popcorn.util.toSeconds(data.exchanges[i].time);
+                var end = Popcorn.util.toSeconds(data.exchanges[i+1].time);
+                var speaker = data.exchanges[i].speaker;
+                var speech = data.exchanges[i].transcript;
+                popcorn.footnote({
+                    start: start,
+                    end: end,
+                    target: "speaker",
+                    text: speakers[speaker]
+                });
+                popcorn.footnote({
+                    start: start,
+                    end: end,
+                    target: "speech",
+                    text: speech,
+                });
+            }
+            popcorn.footnote({
+                start: data.exchanges[data.exchanges.length-1].time,
+                end: popcorn.duration(),
+                target: "speaker",
+                text: speakers[data.exchanges[data.exchanges.length-1].speaker]
+            });
+            popcorn.footnote({
+                start: data.exchanges[data.exchanges.length-1].time,
+                end: popcorn.duration(),
+                target: "speech",
+                text: data.exchanges[data.exchanges.length-1].transcript
+            });
+        });
+    });
+    </script>
+  </body>
+</html>

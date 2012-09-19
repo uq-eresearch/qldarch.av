@@ -1,0 +1,5 @@
+.*.swp
+dep/
+build/
+tags
+html/
