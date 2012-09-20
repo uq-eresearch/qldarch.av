@@ -24,7 +24,6 @@
 
         function exchangeUpdater(exchange) {
             return function(options) {
-                console.log(options);
                 $("#speaker").text(speakers[exchange.speaker]);
                 $("#speech").text(exchange.transcript);
             };
@@ -36,8 +35,15 @@
             $("#date").text(data.date);
 
             var popcorn = Popcorn("#ourvideo");
-            for each (var exchange in data.exchanges) {
-                popcorn.cue(Popcorn.util.toSeconds(exchange.time) - 0.5, exchangeUpdater(exchange));
+            for (var i = 0; i < data.exchanges.length; i++) {
+                var curr = data.exchanges[i];
+                var next = data.exchanges[i+1];
+                popcorn.code({
+                    start: Math.max(0.5, Popcorn.util.toSeconds(curr.time)) - 0.5,
+                    end: next ? Popcorn.util.toSeconds(next.time) - 0.5 : popcorn.duration(),
+                    onStart: exchangeUpdater(curr),
+                    onEnd: function(options) { }
+                });
             }
 
             popcorn.play();
