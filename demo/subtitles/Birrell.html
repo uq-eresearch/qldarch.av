@@ -22,44 +22,27 @@
             speakers = data;
         });
 
+        function exchangeUpdater(exchange) {
+            return function(options) {
+                console.log(options);
+                $("#speaker").text(speakers[exchange.speaker]);
+                $("#speech").text(exchange.transcript);
+            };
+        }
+
         $.getJSON("./Birrell.json", function(data) {
             console.log(data);
             $("#title").text(data.title);
             $("#date").text(data.date);
 
             var popcorn = Popcorn("#ourvideo");
-            popcorn.play();
-            for (var i = 0; i < data.exchanges.length - 1; i++) {
-                var start = Popcorn.util.toSeconds(data.exchanges[i].time);
-                var end = Popcorn.util.toSeconds(data.exchanges[i+1].time);
-                var speaker = data.exchanges[i].speaker;
-                var speech = data.exchanges[i].transcript;
-                popcorn.footnote({
-                    start: start,
-                    end: end,
-                    target: "speaker",
-                    text: speakers[speaker]
-                });
-                popcorn.footnote({
-                    start: start,
-                    end: end,
-                    target: "speech",
-                    text: speech,
-                });
+            for each (var exchange in data.exchanges) {
+                popcorn.cue(Popcorn.util.toSeconds(exchange.time) - 0.5, exchangeUpdater(exchange));
             }
-            popcorn.footnote({
-                start: data.exchanges[data.exchanges.length-1].time,
-                end: popcorn.duration(),
-                target: "speaker",
-                text: speakers[data.exchanges[data.exchanges.length-1].speaker]
-            });
-            popcorn.footnote({
-                start: data.exchanges[data.exchanges.length-1].time,
-                end: popcorn.duration(),
-                target: "speech",
-                text: data.exchanges[data.exchanges.length-1].transcript
-            });
+
+            popcorn.play();
         });
+
     });
     </script>
   </body>
