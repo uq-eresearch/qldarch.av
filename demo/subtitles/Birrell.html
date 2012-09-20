@@ -7,13 +7,11 @@
     <h1 id="title"></h1>
     <div id="date"></div>
     <div style="padding:1em">
-    <audio controls="controls" id="ourvideo">
-      <source src="./Birrell_JM_and_AW.mp3" type="audio/mp3">
-      <source src="./Birrell_JM_and_AW.ogg" type="audio/ogg">
-    </audio>
-    <div id="subtitles"></div>
-        <div id="speaker"></div>
-        <div id="speech"></div>
+        <audio controls="controls" id="ourvideo">
+          <source src="./Birrell_JM_and_AW.mp3" type="audio/mp3">
+          <source src="./Birrell_JM_and_AW.ogg" type="audio/ogg">
+        </audio>
+        <div id="subtitles" style="border:1px solid black;width:500px"></div>
     </div>
     <script type="text/javascript">
     $(document).ready(function() {
@@ -29,11 +27,47 @@
             };
         }
 
+        function subtitleUpdater(jqElement, show) {
+            return function(options) {
+                if (show) {
+                    jqElement.show().animate({"opacity": "1.0"});
+                } else {
+                    jqElement.animate({"opacity": "0.0"}, 'fast', function() { $(this).slideUp(); });
+                }
+            };
+        }
+
         $.getJSON("./Birrell.json", function(data) {
-            console.log(data);
             $("#title").text(data.title);
             $("#date").text(data.date);
 
+            var popcorn = Popcorn("#ourvideo");
+            var subs = $("#subtitles");
+            for (var i = 0; i < data.exchanges.length; i++) {
+                var curr = data.exchanges[i];
+                var next = data.exchanges[i+1];
+
+                var start = Math.max(0.5, Popcorn.util.toSeconds(curr.time)) - 0.5;
+                var end = next ? Popcorn.util.toSeconds(next.time) - 0.5 : popcorn.duration();
+
+                var speakerdiv = $('<div class="speaker" />').text(curr.speaker);
+                var speechdiv = $('<div class="speech" />').text(curr.transcript);
+
+                var subtitlediv = $('<div class="subtitle" style="display:none;opacity:0.0"/>');
+                subtitlediv.data("start", start).data("end", end);
+                subtitlediv.append(speakerdiv).append(speechdiv);
+
+                subs.append(subtitlediv);
+
+                popcorn.code({
+                    start: start,
+                    end: end,
+                    onStart: subtitleUpdater(subtitlediv, true),
+                    onEnd: subtitleUpdater(subtitlediv, false)
+                });
+            }
+
+/*
             var popcorn = Popcorn("#ourvideo");
             for (var i = 0; i < data.exchanges.length; i++) {
                 var curr = data.exchanges[i];
@@ -45,7 +79,7 @@
                     onEnd: function(options) { }
                 });
             }
-
+*/
             popcorn.play();
         });
 
