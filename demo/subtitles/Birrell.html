@@ -11,7 +11,7 @@
           <source src="./Birrell_JM_and_AW.mp3" type="audio/mp3">
           <source src="./Birrell_JM_and_AW.ogg" type="audio/ogg">
         </audio>
-        <div id="subtitles" style="border:1px solid black;width:500px;height:100px;overflow:hidden"></div>
+        <div id="subtitles" style="border:1px solid black;width:500px;height:400px;overflow:hidden"></div>
     </div>
     <script type="text/javascript">
     $(document).ready(function() {
@@ -20,14 +20,17 @@
             speakers = data;
         });
 
-        function subtitleUpdater(jqElement, index, show) {
-            var toppos = jqElement.position().top - jqElement.height();
+        var subs = $("#subtitles");
+
+        function subtitleUpdater(jqElement, index, offset, show) {
+            var toppos = jqElement.position().top - offset;
             console.log("element " + index + " position " + jqElement.position().top + " height " + jqElement.height() + " offset " + jqElement.offset().top);
             return function(options) {
                 if (show) {
-                    jqElement.show().animate({"opacity": "1.0"});
-                    $("#subtitles").animate({"scrollTop": toppos});
+                    jqElement.animate({"opacity": "1.0"});
+                    subs.animate({"scrollTop": toppos}, function() { jqElement.animate({"opacity": "1.0"}); });
                 } else {
+                    subs.stop();
                     jqElement.animate({"opacity": "0.5"});
                 }
             };
@@ -38,7 +41,6 @@
             $("#date").text(data.date);
 
             var popcorn = Popcorn("#ourvideo");
-            var subs = $("#subtitles");
             for (var i = 0; i < data.exchanges.length; i++) {
                 var curr = data.exchanges[i];
                 var next = data.exchanges[i+1];
@@ -55,11 +57,12 @@
 
                 subs.append(subtitlediv);
 
+                console.log("subs offset: " + subs.position().top);
                 popcorn.code({
                     start: start,
                     end: end,
-                    onStart: subtitleUpdater(subtitlediv, i, true),
-                    onEnd: subtitleUpdater(subtitlediv, i, false)
+                    onStart: subtitleUpdater(subtitlediv, i, subs.position().top, true),
+                    onEnd: subtitleUpdater(subtitlediv, i, subs.position().top, false)
                 });
             }
 
