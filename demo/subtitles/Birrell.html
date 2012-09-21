@@ -11,7 +11,7 @@
           <source src="./Birrell_JM_and_AW.mp3" type="audio/mp3">
           <source src="./Birrell_JM_and_AW.ogg" type="audio/ogg">
         </audio>
-        <div id="subtitles" style="border:1px solid black;width:500px;height:400px;overflow:hidden"></div>
+        <div id="subtitles" style="border:1px solid black;width:500px;height:500px;overflow:hidden"></div>
     </div>
     <script type="text/javascript">
     $(document).ready(function() {
@@ -24,11 +24,10 @@
 
         function subtitleUpdater(jqElement, index, offset, show) {
             var toppos = jqElement.position().top - offset;
-            console.log("element " + index + " position " + jqElement.position().top + " height " + jqElement.height() + " offset " + jqElement.offset().top);
             return function(options) {
                 if (show) {
                     jqElement.animate({"opacity": "1.0"});
-                    subs.animate({"scrollTop": toppos}, function() { jqElement.animate({"opacity": "1.0"}); });
+                    subs.animate({"scrollTop": toppos - 50}, function() { jqElement.animate({"opacity": "1.0"}); });
                 } else {
                     subs.stop();
                     jqElement.animate({"opacity": "0.5"});
