@@ -1,0 +1,1571 @@
+{
+    "title": "INTERVIEW WITH BLAIR WILSON",
+    "date": "16 AUGUST, 2012",
+    "exchanges": [
+        {
+            "speaker": "DV",
+            "time": "00:00:01",
+            "transcript": "It?s the 16th of August and we?re in Spring Hill, interviewing Blair Wilson about his architectural practice.  My name is Debra van der Plaat and Andrew Wilson and Janina Gosseye is accompanying me and we will hopefully have an interesting talk with Blair about his practice."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:00:31",
+            "transcript": "So, as I said before we?re trying to divide the interview into three categories, first your formative years, your education and your early architectural works;  then your practice; and then talk a little bit towards the end of the interview about practice in Queensland today."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:00:48",
+            "transcript": "Before getting on to the idea of your architectural education, you are the third generation architecture in your family, being proceeded by your father, Roland Martin Wilson."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:01:01",
+            "transcript": "Ronald."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:01:02",
+            "transcript": "Yeah, and grandfather."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:01:04",
+            "transcript": "Not Roland, Ronald."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:01:03",
+            "transcript": "Ronald, oh sorry.    Sorry, I misread, I had it written correctly but I misread it.  Ronald Martin Wilson and Alex Brown Wilson.  Before moving into questions  relating to your formal architectural education, I thought it would be useful to start this interview with a question on your family history, and how that has informed your conception of architectural practice within Queensland and your decision to become an architect."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:01:35",
+            "transcript": "A couple of questions there."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:01:36",
+            "transcript": "There is."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:01:37",
+            "transcript": "Family history in Queensland, well on my father?s side, Alex B Wilson, my grandfather came to Brisbane as a child, from Glasgow and his architectural training was, I think he may have been in the works department for a short time.  He went to London and whatever the process was, he got an ARIBA there, I don?t know whether it?s by exam or what and he returned to Brisbane commenced practice in 1884."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:02:31",
+            "transcript": "I think he went to England about the same time, so I think it must be a fairly short visit to England.  But, he certainly picked up the British membership while he was there.  So, he commenced practice, 1884, and during his career he was the President of the Queensland Institute of Architects on about three occasions, the last being about 1921 after probably a decade or more of other things."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:03:18",
+            "transcript": "My father commenced his ? he was at the Grammar School ? and then he went into his father?s office as a cadet and trained there.  There was no architectural course at the time.  But, when the university started, there was an engineering course and he decided to do that."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:03:48",
+            "transcript": "Did he decide to do the engineering because there was no architecture or did he ? you?re not sure?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:03:53",
+            "transcript": "I suspect it may have been or he may have seen it as a help for architecture.  In fact I think that might have been his view.  But, anyway, he was a successful  student and he won the first Walter and Eliza for Travelling Fellowship which was just ear the outbreak of the first world war and it took him to America and then on to Britain and he was in Britain during the war, working for munitions, returned to Australia about 1920 ? 1921 and joined his father in partnership."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:04:39",
+            "transcript": "His father retired  in the late ?20s and he continued in sole practice as Martin Wilson, just prior to 1930 and he continued as such as a sole practitioner until I came along and I commenced my training at the university as the third intake of degree students in 1949 at George Street.  I fact, all our training was at George Street."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:05:29",
+            "transcript": "Did you take up architecture because it was the family business by then?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:05:35",
+            "transcript": "I never really thought of anything else."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:05:38",
+            "transcript": "Okay.  So, architecture was a very strong part of your life growing up?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:05:40",
+            "transcript": "Well, it was ? my father was an architect and that?s all I knew."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:05:47",
+            "transcript": "Okay, so it was something that was discussed at home and talked about at home."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:05:50",
+            "transcript": "I don?t think we talked about."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:05:52",
+            "transcript": "No, it just was."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:05:53",
+            "transcript": "Yeah, it just was."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:05:54",
+            "transcript": "Okay.  That?s interesting.  So, you just always knew you?d be an architect?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:05:59",
+            "transcript": "Yes, I think so."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:06:00",
+            "transcript": "All right.  That?s really interesting.  So, you just mentioned there that you started at UQ in the third intake for the new degree program.  We?re actually really interested in talking a bit about that.  You entered at 1949 and you said you did it at George Street in town.  So, that was still connected then to the central tech part of that program?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:06:26",
+            "transcript": "No, it wasn?t.  There was two courses conducted down there.  The university degree course, which I was a member, and the technical college course ? the diploma in architecture ? which was on the same campus, just different buildings and it was run ? ours was full time study, the first three years, the diploma course was part time study and at fourth year we joined together and we did the last three years together, the difference being that we had to write thesis and diploma students didn?t."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:07:13",
+            "transcript": "We worked during the final three years and I worked for a firm called Job Colin and Fulton and alongside several diploma students and I found myself quite inadequate as a draftsman compared to them, who had worked full time up to that stage."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:07:38",
+            "transcript": "And who were your teachers during the degree?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:07:43",
+            "transcript": "Well, two fundamental ones were Professor Robert Cummings and Bruce Lucas.  They were full time staff and there were several part time staff that just came in; Athol Bretnall was one, John Hitch was another."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:08:08",
+            "transcript": "Was Karl Langer there at that time as well?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:08:11",
+            "transcript": "He was a ? yes he was part time, he was giving special lectures in town planning."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:08:20",
+            "transcript": "What was your memory or impression of your teachers at that time?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:08:27",
+            "transcript": "We were a very small group of degree students, there was ? in our year there was about six.   We?d go out on projects and we?d all go in the one car.  I mean, that?s how small it was.  We?d go to Bob Cummings home for parties and we felt quite exclusive really, compared to the diploma students."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:09:01",
+            "transcript": "So, what were the sort of numbers in the diploma course, if you can remember."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:09:04",
+            "transcript": "More than us, I think we had five, six or seven in that number.  Diploma students would be ten plus.  Then we came together in fourth year and we studied together, at part time at night ? I think it was three nights a week ? and the only difference was that we were required to do a thesis at the end of that time, they weren?t.  But, we still maintained a stronger social link with Professor Cummings and Bruce Lucas, than the diploma students, they were, sort of, lesser people."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:09:51",
+            "transcript": "That?s a bit of a hierarchy in the two degrees was there, so it seemed to be more prestigious to be doing a degree course."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:09:55",
+            "transcript": "Yeah."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:09:57",
+            "transcript": "So, what type of subjects were you studying as part of the degree course?  Ws it design?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:10:00",
+            "transcript": "Well, the first year, we did pure and applied maths, chemistry, physics and geology.  As full time students down at George Street and that was the essence of our program.  We did architectural subjects.  Architectural Principles one, two, three and then in the fourth year we joined with these diploma students, a much bigger class, as I said before we felt quite inadequate compared to them in terms of practice experience."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:10:56",
+            "transcript": "Architectural Principles one, two and three, were they design courses, history theory a combination of all?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:11:02",
+            "transcript": "There were several subjects, there was Architectural Principles Design, which was a design subject, both lectures and practice.  There was History of Architecture, there was Construction and we were also, in the first year or two, we had to do courses outside architecture in chemistry and physics and geology."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:11:34",
+            "transcript": "So, they were mainstream university courses that you had to link into."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:11:37",
+            "transcript": "Yes, they were.  We joined with the engineers in some of those courses."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:11:41",
+            "transcript": "Were there any links in with art history and the humanities side of the university at that time or was it purely the sciences?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:11:48",
+            "transcript": "No, the course was conducted purely by Professor Cummings and Bruce Lucas and his helpers.  I don?t think  Karl Langer was there too."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:12:05",
+            "transcript": "You?ve mentioned your architectural thesis project is what separated you from the diploma students and I?ve been looking through some of our old drawings at UQ and I discovered these.  I?m sure you didn?t know these still existed.  So, this is your thesis project or drawings from your thesis project."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:12:29",
+            "transcript": "Yes, I did a thesis on the requirements of a student union building."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:12:37",
+            "transcript": "And this is it.  I?m just wondering if you could talk a bit about the project and I believe you won a student award at the end of your degree too, which I?m assuming was based on a thesis or the degree in general."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:12:55",
+            "transcript": "Let me just think, I?ve got to recall a little bit here.  I won the QAA Medal, which was all of the diploma and degree students were eligible for this and I think it was just sort of top of the class.  As I say, I wrote my thesis on the requirements of the student union building and - - -"
+        },
+        {
+            "speaker": "DV",
+            "time": "00:13:32",
+            "transcript": "So, the thesis consisted of the design plus a written document or was it just - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:13:39",
+            "transcript": "It might have ? I notice this was dated in March 1955, which was after I started the thesis, although it could well have been part of the thesis.  The requirements of a student building ? ah thesis project, it was that, yes."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:14:06",
+            "transcript": "So, did Professor Cummings run this thesis component or was it done in collaboration with Bruce Lucas."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:14:16",
+            "transcript": "Look, they were like Ada and Else.  You know, they worked very, very closely together, they were a partnership in practice at one time."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:14:30",
+            "transcript": "But Bruce Lucas seems to have been responsible for the professional practice courses."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:14:39",
+            "transcript": "He lectured in professional practice later on but in these early years he would have lectured in, not architectural design, but other associated subjects."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:14:55",
+            "transcript": "So, they collaborated together to help students with their design work.  Would it be fair to say that or did they teach these separate streams of the - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:15:06",
+            "transcript": "Well they were both full time staff and there were other part time staff that were brought in for studio work.  It included Athol Bretnall, John Hitch, Ron Voller or Rod Voller, maybe both of them.  They were part time and they just came in."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:15:36",
+            "transcript": "Did you have contact, I guess, over the course of your degree, you would have done different studios with different people.  Did you work with any of those people?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:15:45",
+            "transcript": "Yeah, each year we would have a different, I think from memory we had a different studio tutor."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:15:54",
+            "transcript": "Yes, so do you remember the people that ran your studios?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:15:57",
+            "transcript": "Yes.  There was, well both Bob Cummings and Bruce Lucas, they  supervised our work.  Athol Bretnall was another.  John Hitch was another."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:16:16",
+            "transcript": "Yes.  So, they would be the key people, I would imagine."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:16:19",
+            "transcript": "They were."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:16:22",
+            "transcript": "That?s great.  That?s a good overview.  It gives a sense of the people that you would have had interaction with when you were doing the design work"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:16:29",
+            "transcript": "Yes we were aware of the contributions that they were making to us and that they were quite positive."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:16:40",
+            "transcript": "I guess when you came together with the technical students - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:16:45",
+            "transcript": "Diploma students, yes?"
+        },
+        {
+            "speaker": "AW",
+            "time": "00:16:46",
+            "transcript": "In that fourth year was there a sense of collaborating with them a bit on, particularly - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:16:57",
+            "transcript": "Competition to some extent.  They had been working part time and they were much more skilled at drafting and that sort of thing.  We claimed we were more better educated."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:17:12",
+            "transcript": "Did you socialise with them or was it?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:17:14",
+            "transcript": "Yes we did."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:17:16",
+            "transcript": "So, there was a kind of camaraderie?  Even if it was competitive."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:17:19",
+            "transcript": "Yes, there certainly was but nevertheless we were degree students and that made the difference."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:17:25",
+            "transcript": "And was the idea attached to that that you were studying architecture proper, as opposed to the diploma?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:17:33",
+            "transcript": "No, no, I don?t think we felt that way.  We were both studying architecture.  We?d had this three years of full time which included subjects that they didn?t do, like, sciences and they were subjects which, at the time, I thought was more of a waste of time, the sort of things ? it was just a background to your education which came through as years went by as being something worthwhile."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:18:10",
+            "transcript": "So, the diploma students were working part time for the first three years, presumably in practices, so their studies from all your knowledge were more based on the design projects, without the additional science subjects."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:18:25",
+            "transcript": "No, I?m not sure what they were doing.  I think there was a lot of studio work because, being part time, they studied at QIT it was then and a separate building from us and we knew of them because we?d been to school with some of them and apart from that we reckoned we were much better than them and therefore we didn?t want to mix too much."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:18:57",
+            "transcript": "Fair enough."
+        },
+        {
+            "speaker": "JG",
+            "time": "00:18:59",
+            "transcript": "So, the names that are listed in the book, The History of Wilson Architects, are they Robin Gibson, Jack Gilmore, Steve Trotter, those were all the degree students or were those also - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:19:09",
+            "transcript": "No, they were diploma students."
+        },
+        {
+            "speaker": "JG",
+            "time": "00:19:11",
+            "transcript": "Those were the diploma students."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:19:13",
+            "transcript": "The degree students and I can remember them, in my year, there was one girl called Paquita Day, Ury Stukoff ? and I?d been through Grammar School with him ? and we went right through our course together without missing a year.  This is a bit hard."
+        },
+        {
+            "speaker": "JG",
+            "time": "00:19:45",
+            "transcript": "Cecil Hardgraves?"
+        },
+        {
+            "speaker": "AW",
+            "time": "00:19:46",
+            "transcript": "You?re doing well there.  You?re doing well."
+        },
+        {
+            "speaker": "JG",
+            "time": "00:19:49",
+            "transcript": "Cecil Hardgraves, Ron Purssey?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:19:51",
+            "transcript": "They?re the diploma students from the technical college that we joined with.  Steve Trotter, Jack Gilmore, Ron Purssey."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:20:03",
+            "transcript": "So, when you were studying Blair, what practices were you aware of in Brisbane that you might have been interested in."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:20:10",
+            "transcript": "Well, my father?s practice I knew and the people that my father knew, professionally, Conrad and Gargett, which was a much bigger firm, Bligh Voller, I think it was Bligh Voller it may have been an earlier name than that."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:20:53",
+            "transcript": "Hayes & Scott I guess were doing houses in the early ?50 were you ? Hayes and Scott."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:20:57",
+            "transcript": "Of course, Hayes & Scott, they were at the top of the tree as far as housing was concerned, yet.  They did a tremendous amount."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:21:05",
+            "transcript": "And you would have had George Henderson a couple of years ahead of you."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:21:10",
+            "transcript": "Yes, I didn?t know George but I knew of him."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:21:12",
+            "transcript": "Sorry, behind you, he was behind you."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:21:16",
+            "transcript": "We weren?t in the same year so, yeah."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:21:20",
+            "transcript": "Just pulling you back to the thesis project for a moment.  In the firm?s history it does briefly mention your thesis project as being a collaborative project with engineering students, Gavin McDonald."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:21:31",
+            "transcript": "That was my thesis."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:21:33",
+            "transcript": "That was your thesis itself."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:21:34",
+            "transcript": "Gavin McDonald."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:21:36",
+            "transcript": "Yes."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:21:39",
+            "transcript": "The requirements of a student union building.  Well this was it, yes.  Well, we ? I don?t know if ? have you seen the thesis?"
+        },
+        {
+            "speaker": "DV",
+            "time": "00:21:52",
+            "transcript": "No, no I haven?t seen it."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:21:53",
+            "transcript": "I think it is at the university, so.  But anyhow, it was the requirements of a student union building.  I think Professor Cummings suggested the subject as something that needed to be done.  Then, this was drawn in 1955 which was just prior to receiving my degree and it may have been ? well it is part of the thesis project, yes."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:22:31",
+            "transcript": "I?m just interested in the collaboration with Gavin, and the engineering student, was that a common approach at that time?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:22:39",
+            "transcript": "No, it was I think, almost the first.  And, I think it was suggested by Professor Cummings for ? I can?t recall ? but he ? we didn?t just meet in the street and say let?s go and do something together."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:22:58",
+            "transcript": "I was also wondering too, because your father sort of started off in engineering too."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:23:03",
+            "transcript": "Yes he did."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:23:04",
+            "transcript": "An architectural engineer and whether that connected to - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:23:07",
+            "transcript": "No, no."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:23:08",
+            "transcript": "It wasn?t through an extension of that interest.  No, okay.  All right.  So, we?ve talked a little bit about significant student contemporaries, in terms of who was in the diploma and Andrew started to talk about some of the architects and firms that you admired here in Brisbane.  Again, in the published history of the firm, it states that, after you completed your studies, you spent some time travelling aborad and Europe and that you visited work of renowned contemporary architects in civic spaces which you had studied during your course.  Could you give us a bit more information about what you did visit and what those projects were?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:23:52",
+            "transcript": "If I can.  I went ? actually it was Professor Cummings that knew of this firm in London and he gave me an introduction to them."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:24:06",
+            "transcript": "And that?s - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:24:07",
+            "transcript": "A firm called Clifford Tee and Gale and I went to London knowing I had a job.  And, I went in there and they treated me like a prize student, you know, I was just given every opportunity to see things and experience things far more than other students.  It was quite good."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:24:39",
+            "transcript": "And they specialised in industrial work I believed."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:24:41",
+            "transcript": "Power stations."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:24:45",
+            "transcript": "And you got to work on a number of projects?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:24:47",
+            "transcript": "Yes I did.  Castle Donington was one.  I can?t remember any details about it, but, and I think that I was given some ancillary zone projects associated with these larger projects, like doing a staff amenity building for one of the power stations, something like that."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:25:16",
+            "transcript": "But anyway, it was ? I felt I was quite privileged in the training I got there."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:25:21",
+            "transcript": "And how long were you with them?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:25:24",
+            "transcript": "Less than a year, and then my future wife came over, who I?d been corresponding with,  and when she arrived then the two of us, plus four others, did the grand tour of Europe in two cars and I maintained links with the firm and visited them on visits back to London from time to time.  I was in London a month or two ago and I didn?t do it then because I don?t think there?s anyone there that I would know.   In fact I?m not even sure that the firm still exists."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:26:07",
+            "transcript": "Well, I looked them up and they?re still advertising as existing, so, I couldn?t find much more information about them."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:26:16",
+            "transcript": "Do you recall the address?"
+        },
+        {
+            "speaker": "DV",
+            "time": "00:26:18",
+            "transcript": "No, I don?t actually."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:26:20",
+            "transcript": "No well, that?s interesting to know."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:26:24",
+            "transcript": "There?s still a firm functioning under that name at least.  Which is quite interesting."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:26:26",
+            "transcript": "It?s Clifford Tee and Gale?"
+        },
+        {
+            "speaker": "DV",
+            "time": "00:26:27",
+            "transcript": "Yes.  So, that?s kind of interesting I think.  The grand tour, did you go visit buildings by architects you were interested in or civic projects."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:26:41",
+            "transcript": "Yes, but the grand tour consisted of my future wife Bev and four of her lady friends that she met on the boat coming over, in two cars.  51 OBY 52.  And, it was just the grand tour.  We drove down through France to Spain through Spain and back up around the Riviera into Italy.  Then in Amsterdam, I think, Beth and I left the others and they took the cars back to England and we continued.  We hitchhiked through Scandinavia and when we got back to London I flew home to Australia, beth came back about nine months later."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:27:49",
+            "transcript": "So, on that grand tour of Europe the architectural works I looked at were the one that I knew about that were all text books that we had at the time."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:28:05",
+            "transcript": "So, were they historical projects or more contemporary work."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:28:08",
+            "transcript": "Both, but the contemporary ones were particularly in Finland.  Works by Alvar Aalto and Saronin.  Well they were superficial looks at them, I didn?t get around with a tape measure or anything like that."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:28:34",
+            "transcript": "Camera?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:28:34",
+            "transcript": "Oh yes, camera certainly."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:28:37",
+            "transcript": "So, you got a visual record of the buildings you were visiting."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:28:40",
+            "transcript": "Well in those days with film, you might take three photos a day, it was crazy."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:28:47",
+            "transcript": "So facade shots?  Okay, that?s interesting.  While you were in London, it says you also did some study at the AA."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:28:57",
+            "transcript": "Yeah.  It didn?t lead to any qualification, it was just post graduate studio study you go to one or two nights a week and we do studio work under the tutorage of well know British architects."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:29:20",
+            "transcript": "Can you remember who any of those architects were at the time?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:29:23",
+            "transcript": "Not now."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:29:26",
+            "transcript": "And you also became an associate of the RIBA at that time?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:29:29",
+            "transcript": "Yes I joined, the funny thing, I think I put an application to join and I have actually been made a member and I wasn?t? aware of it, so all this time I wasn?t aware I was a member of the RIBA.  I could have gotten a new [00:29:50].  Stupid."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:29:52",
+            "transcript": "The library.  All right.  I suppose the other thing, while we?re still talking about education,  rather than coming back to it.  In 1966 you also took some additional studies at the Institute of Advanced Architectural Studies in York."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:30:11",
+            "transcript": "Yes.  That was a course run by the British council and the course commenced in York, there were students from everywhere, and there were probably about 50 students in the course and the course comprised lectures by very prominent architects and visits to their buildings."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:30:50",
+            "transcript": "We started in York and we travelled through two or three other places in England and ended up down in the south of England somewhere.  That was a very, very valuable experience and from there, almost immediately after that,  I went to Finland and did a course at the University of Jyvaskyla.  I can?t remember too much about it, it was only a matter of two or three weeks.  I think it was [00:31:31] and as I say, it didn?t lead to any qualifications, just that a very, very interesting good experience."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:31:42",
+            "transcript": "So, like professional development and things, what we?d call professional development now?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:31:51",
+            "transcript": "It was concentrated on different aspects of architecture rather than just straight out aesthetic design."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:32:03",
+            "transcript": "I believe the one at York was about campus planning?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:32:06",
+            "transcript": "Yeah it was campus planning, that was an excellent course."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:32:13",
+            "transcript": "Before moving onto your work, and I suppose sort of linked to this idea of travel directly after your course and later in subsequent years, was it common at that time for students as soon as they graduated to head overseas and to get some overseas work experience?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:32:29",
+            "transcript": "It was common for a small proportion of our graduates.  I mean, you almost got your name in the paper if you went overseas in those days.   But, in our final year there were, I think six degree students, maybe 12 diploma students that have come through the technical college first and we all had to do thesis.  The degree students had to do a thesis.  And, by that time I?d spent three years working in an office, I worked in Job Collin Fulton, some of my student friends, Steve Trotter, Jack Gilmore, Cec Hardgraves I think was there, but then, before I went overseas, my father really wanted my help in his office, so I came back and I worked with him for six months or so before he went overseas."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:33:48",
+            "transcript": "As I said before, the job overseas was arranged by Professor Cummings."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:33:55",
+            "transcript": "So, it was seen as a definite advantage when you came back, having that overseas experience.  Or was it just - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:34:02",
+            "transcript": "Of course we thought so, I thought so."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:34:03",
+            "transcript": "You personally thought so, yeah.  Do you think there was a wider community appreciation of that?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:34:10",
+            "transcript": "I think it?s, just a wider general experience.  I mean, I worked in an office that was much bigger than I?d experienced before, and because Professor Cummings had knew the principals of that firm, I was really treated as a prize employee.  It was dreadful really, but, I had to enjoy it."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:34:38",
+            "transcript": "I was given ? I worked on numerous big projects as an assistant."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:34:46",
+            "transcript": "So, how big was the firm in London?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:34:52",
+            "transcript": "I would they may, I don?t think we were all in the one building, I think there could have been 30 plus."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:34:58",
+            "transcript": "So, compared to your father?s practice, back here in Brisbane, that was - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:35:04",
+            "transcript": "That was virtually a one man practice."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:35:05",
+            "transcript": "He was a one man practice."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:35:07",
+            "transcript": "With maybe one, two or three assistants from time to time."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:35:11",
+            "transcript": "So, when you came back, you started working for your father again?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:35:14",
+            "transcript": "Yeah I did."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:35:15",
+            "transcript": "And when was that?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:35:15",
+            "transcript": "Well, I came back because he needed me."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:35:18",
+            "transcript": "When was that?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:35:19",
+            "transcript": "When?"
+        },
+        {
+            "speaker": "DV",
+            "time": "00:35:20",
+            "transcript": "When, yeah."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:35:21",
+            "transcript": "Nineteen sixty-six, about August.   He had, I think he had a couple of projects, important projects that he needed help on and he was aging.  I mean he would have been ? 1966, he died in ? I?m not sure ? but it was ten years later maybe, it might have been ten years later that he died.  We had two or three employees at the time.  What was that other question you asked?"
+        },
+        {
+            "speaker": "DV",
+            "time": "00:36:05",
+            "transcript": "I was going to start talking about the work, but I was going to ask also when did you take over the practice as the principal?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:36:14",
+            "transcript": "Well I?d say my father handed the reins to me when I came back."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:36:21",
+            "transcript": "And did the practice grow from that point on or did it stay a relatively small family business?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:36:32",
+            "transcript": "I believe that we got work because we came back, from clients ? because my father was aging, he was 46 when I was born, so, you know, he was aging and losing touch and he had some old clients that, sort of, suddenly gave us work.  So, it was quite good and he gradually drifted out of the practice."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:37:15",
+            "transcript": "And you gradually took over.  So, what were the projects at that time? Were they primarily domestic or civil or?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:37:23",
+            "transcript": "Industrial.   One of his major clients was the COD which was the Committee of Direction of Fruit Markets, COD, and he had several projects on with them in Stanthorpe and Nambour and Brisbane and they all seemed to reach a stage where they had to really advance at about the time that I came back and so I worked on those."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:37:57",
+            "transcript": "Another project that he had, which I think he got through having lunch at Greek fish and chip shop, was the Greek Orthodox Church.  I don?t know all the ramifications of how it happened, I think it was after I ? in fact I think it may have been one of the reasons I came back because he?d had wind that he could well get this job and so I used to go off to meetings with the Greek community with him and sit in and handle all the Greeks who were [00:38:45] with him ? anyway we built that church. Then we built a Community Centre next door, after my father had left the practice, and then we built a Sunday School for them after that."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:39:01",
+            "transcript": "And the COD continued to be an important client, they had major buildings at Brisbane Markets and we did a lot of the specialist buildings at Brisbane Markets, through to the Co-ordinator General?s Department."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:39:23",
+            "transcript": "So, I?m assuming your experience from London, working for a firm that was primarily industrial projects, was of great benefit or influence, or much?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:39:35",
+            "transcript": "I never saw it as great benefit.  I mean architectural practice ? well the industrial buildings that I worked at in London, I was a sort of assistant to an assistant and I?d just do aspects of it.  It wasn?t total projects, until I came back here and I joined my father, well I virtually took over these various projects and ran them."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:40:06",
+            "transcript": "Moving into the ?70s, you yourself are connected to a number of really interesting projects, such as the La Boite Theatre and the Kindler Memorial Theatre at QIT, which is now QUT and the Science one and two buildings at Griffith University.  What do you consider to be your most important works?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:40:28",
+            "transcript": "Well, I enjoyed KindlerTheatre and Repertory Theatre are two which I?ve had pretty near free hand in designing and, in fact, the Kindler Theatre at the QIT, I was in a meeting and it was suggested ? I was at a meeting with Don Fraser who was the director at the time ? that you know, perhaps you could do this project for a theatre.  And, I sketched it there and then as to what it could be and in those days you didn?t go through formal tendering processes to get  design work, we sort of picked off the shelf.  Anyway we got that job to do and it led to me having a reputation in education."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:41:37",
+            "transcript": "Actually I went to England ? because of that little bit of experience I went to England and did this course on university buildings.  That led to ? it really opened up to take a lot more work."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:41:52",
+            "transcript": "Such as the science buildings at Griffith?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:41:53",
+            "transcript": "Science at GU, University of Queensland, Griffith University, I was one of the three initial architects chosen for the campus.  Roger Johnson, who was the university architect, who I personally respected enormously, a qualified architect and planner and landscape architect.  He was qualified in all those things and he was a tremendous inspiration to me.  So, we went from there."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:42:41",
+            "transcript": "The Kindler Theatre was a great little project.  I remember - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:42:44",
+            "transcript": "Which one?"
+        },
+        {
+            "speaker": "AW",
+            "time": "00:42:43",
+            "transcript": "The Kindler Theatre, I remember using it at QUT, I know that it?s been subsequently demolished, but I remember the ? particularly remember the foyer space, with the expressed waffle slab, and moving up into the theatre, the light that you moved into."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:43:03",
+            "transcript": "Yeah, well, as I say it was designed on the back of an envelope in a meeting.  Then I went away and drew it up properly."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:43:11",
+            "transcript": "It seemed quite a Brutalist project, would you say that you were interested in?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:43:15",
+            "transcript": "Look you could put any title to it, I think, at the time, it just happened like that, it wasn?t the result of months of research and experimenting, it just happened like that.  There it is."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:43:33",
+            "transcript": "What about the La Boite Theatre.  That?s another project that Deborah?s already mentioned that I think is a fantastic local building."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:43:40",
+            "transcript": "The history of that is that I was friendly with the Blocksidges.  Jennifer Blocksidge and her husband Bruce.  And both of them were involved in the Brisbane Repertory Theatre which was conducted in a couple of old houses down they got me involved and interested and in a quite informal way I found myself being architect and sitting in the gutter outside the theatre and drawing in the dust what the theatre might look like, with Jennifer.  That was a very happy project."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:44:31",
+            "transcript": "The use of brick is really interesting in that project."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:44:34",
+            "transcript": "Well it won a clay brick award.  Yes.  And the thing that ? they were reject bricks that we used."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:44:47",
+            "transcript": "And was it seen as a really usual thing to be doing at time here in Queensland? Using brick in that way?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:44:54",
+            "transcript": "Well, I think it was a sort of a no ? no to go and use reject material.  But, we saved several thousand dollars by doing that and, you know, we were all swept along by the enthusiasm.  Because we were told, that if we could get planning approval we could get financial approval in a matter of a week.  And, so, council people, sort of, bent over backwards to help."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:45:35",
+            "transcript": "The drawings based on something drawn on the back of an envelope almost and I said, well I?ll give you a proper drawing.  It?s weird but it all really did happen."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:45:46",
+            "transcript": "Happened very quickly."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:45:47",
+            "transcript": "We appointed a builder and he went over to the site and I said, ?It?s not going to be any wider than that and it?s not going to longer than that and we?re going to have truncated corners, so you can start digging and I?ll give you more information later.?"
+        },
+        {
+            "speaker": "DV",
+            "time": "00:46:03",
+            "transcript": "And, how did that go?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:46:04",
+            "transcript": "It all went well.  Yeah, good builders, yeah."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:46:09",
+            "transcript": "The La Boite is connected, often, in some of the writings to your interest in Alvar Aalto."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:46:15",
+            "transcript": "Alvar Aalto, yes.  Well, I went to Finland ? it was a course that was being conducted by the University of Jyvaskyla in architectural design.  I can?t remember the correct title of that course, but Jyvaskyla University was designed by Aalto and while we were at that university he made an appearance and because everyone, sort of ? yeah, so I can?t claim that I shook his hand or anything closer than that, but it was quite an inspiration at that time, Alvar Aalto, in my view, is one of the very best."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:47:09",
+            "transcript": "So, did he actually come to teach a course or give a lecture, or?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:47:13",
+            "transcript": "He simply gave a lecture, it was a gathering of architecture ? I think it might have been related to educational buildings, I just can?t remember now."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:47:24",
+            "transcript": "So, you actually saw and heard him speak, which is kind of nice.  I suppose on the flip side of that, I?ve lost my place here.  In the flip side of that you?re firm, Wilson Architects, is singled out as making a great contribution to the city of Brisbane, which is made evident in a number of key buildings, from John Lamb?s house to the Cliff Side flats, the St Lucia Presbyterian Church and La Boite.  It?s also, in the literature, sort of picked out as having this unswerving commitment to design ideas that resonate with place, climate and context.  So, I?m just wondering if you can comment on that side of the - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:48:16",
+            "transcript": "No, these are things that are in the background all the time, they?re with you and you just make use of them.  I don?t think they?re regarded as subject that you say, ?Right, I must fulfil this one and I must fulfil that? it?s just part of it."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:48:32",
+            "transcript": "There?s the wonderful article which our students read in our Architecture of the Region course by your grandfather, which I have here, Domestic Architecture for Tropical and Sub Tropical Architecture."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:48:45",
+            "transcript": "Yes, I know that article, yes.  And, it was based on the design of his house at East Brisbane ? Kangaroo Point."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:48:55",
+            "transcript": "[Cambury  00:48:57] was it?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:48:57",
+            "transcript": "[Cambury 00:48:56]"
+        },
+        {
+            "speaker": "DV",
+            "time": "00:48:59",
+            "transcript": "e He simHe gIs that house still there do you know?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:49:01",
+            "transcript": "No."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:49:00",
+            "transcript": "No, it?s gone.  I was just wondering about that."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:49:05",
+            "transcript": "In essence, it had big verandas, very big, and deep verandas so that they were quite useful places to live."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:49:16",
+            "transcript": "They became rooms rather than - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:49:18",
+            "transcript": "I think I?ve got the first plans for that somewhere."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:49:22",
+            "transcript": "There is, I think that?s the plan."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:49:25",
+            "transcript": "Yes, that?s it.  There?s this great big veranda there, and the dining room table was on that veranda.  That?s where all the family spent time."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:49:37",
+            "transcript": "So, he was obviously thinking a lot about domestic architecture, in terms of its climate and he got some really interesting responses at the Town Planning Conference from people about that.  Is that something that the firm and you yourself have thought a lot about, in terms of your practice, the idea - - -"
+        },
+        {
+            "speaker": "BM",
+            "time": "00:49:55",
+            "transcript": "What domestic?"
+        },
+        {
+            "speaker": "DV",
+            "time": "00:49:57",
+            "transcript": "Yeah, well climates, both in civic projects and in domestic."
+        },
+        {
+            "speaker": "BM",
+            "time": "00:50:01",
+            "transcript": "We thought a lot about climate, regardless of anything.  You know, shelter from the westerly winds and sun, exposure to the north east breezes for Brisbane, this is critical.  So, it was just the ? one of the fundamental rules, the design for climate."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:50:25",
+            "transcript": "And, that sort of brings me to my next question.  We?ve talked a bit about your civic projects and your more public projects, what about domestic architecture.  What do you see as being important?  Or, what domestic works are you particularly proud of?"
+        },
+        {
+            "speaker": "BM",
+            "time": "00:50:40",
+            "transcript": "Well not ? I didn?t have many.  We won an award one year, it was a building for a lady called Mrs Hooper at Tarragindi, which was built up a steep hill, it was just spread out, running east west exposed to the north, through ventilation and that won an award, that one.  We never won many awards, but the climate in Brisbane is so related to the aspect of where the good winds come from and where the bad winds come from, yeah."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:51:21",
+            "transcript": "What about more generally the idea of place.  That?s an idea that?s been promoted a lot recently, through such exhibitions as Place Makers, which is more broadly about the region, in a regional architecture.  Were those concerns and interests in your architecture too, or?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:51:41",
+            "transcript": "Well, could you give an illustration of that?"
+        },
+        {
+            "speaker": "DV",
+            "time": "00:51:43",
+            "transcript": "Well, the idea of maybe ? Andrew might be able to jump in here ? but the use of regional materials and the development of, sort of,  a more particular image of Queensland architecture, or local architecture."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:51:59",
+            "transcript": "Even related to the local Queensland house type.  How would you use your work or how do you regard, say, the Queensland house?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:52:11",
+            "transcript": "Well, the fundamental influence and design of the Queensland house in this climate, and if you made it stretch out east west, well, you could tilt it a little bit,  you got it.  And, if it was one and a half rooms thick and you had through ventilation, you couldn?t have it any better."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:52:35",
+            "transcript": "What about materials?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:52:37",
+            "transcript": "Not so important, but timber obviously is available and [brukens 00:52:43] and obviously it can be a combination of both; but, you could ? those walls that required heavier insulation ? like the west wall, the east wall ? you could back in masonry."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:53:01",
+            "transcript": "In the 1970s your wife joined the practice as a landscape architect, and, I believe she studied botany originally at UQ, we?re interested about know about was that common at that time, the profession of landscape architecture?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:53:22",
+            "transcript": "Now, the course in landscape started while she was pregnant with one of our children.  I can?t remember which one, but anyway, the course was suddenly made available and she went along and joined it.  No, she was pregnant at the time of the first year exams, yeah.  Anyway, she got through that course very well."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:53:48",
+            "transcript": "And, where was the course in landscape?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:53:50",
+            "transcript": "It was conducted at the QUT."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:53:53",
+            "transcript": "Okay, and that was the formal course in landscape architecture?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:53:57",
+            "transcript": "Yes.  The first - - -"
+        },
+        {
+            "speaker": "DV",
+            "time": "00:53:58",
+            "transcript": "The first one.  Okay.  And, was it common then to have a landscape architect attached to a practice, or was hat something new, quite innovative?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:54:07",
+            "transcript": "No.  I mean, there weren?t many landscape architects about, there was ? Karl Langer was an architect, landscape architect, town planner.  There were some landscape architects around, their names escape me at the moment, I don?t know where they were trained; they may have been self trained.  It wasn?t that common and this course that Beth joined was a starter court and the participants in that course were graduates from other courses in architecture.  Well, in fact, all you had to do was have a degree and she had a degree in botany and so she was eligible to join this course ? three years."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:55:05",
+            "transcript": "And, the work for Beth in those early years, was it more on civic projects or where they - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:55:11",
+            "transcript": "People?s back gardens."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:55:12",
+            "transcript": "There were people?s back gardens, okay."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:55:14",
+            "transcript": "That?s about it."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:55:14",
+            "transcript": "She did a project for us."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:55:17",
+            "transcript": "Did she?"
+        },
+        {
+            "speaker": "AW",
+            "time": "00:55:18",
+            "transcript": "Yeah.  We had a carport that she turned into a pergola ?d extension of the living and dining room."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:55:28",
+            "transcript": "When was that?"
+        },
+        {
+            "speaker": "AW",
+            "time": "00:55:29",
+            "transcript": "That would have been in ?73, 1973."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:55:33",
+            "transcript": "Yeah, well that must have been close to the beginning of her professional life."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:55:37",
+            "transcript": "It was fantastic."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:55:40",
+            "transcript": "It was so funny.  I remember that, when she started this course she had eight or ten years away from being a student, or even working, so she almost had to learn how to write again."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:55:57",
+            "transcript": "That was in [Craden 00:55:58] Street, Ascot.  You wouldn?t remember the address but."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:56:03",
+            "transcript": "I?ve heard of the address.  So, it must have."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:56:10",
+            "transcript": "Going back to the 1945 ? 1975 parameters of our project, and outside of your own practice and your firm?s practice, what would you consider to be the other significant buildings produced in buildings at that time."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:56:27",
+            "transcript": "Not by us?"
+        },
+        {
+            "speaker": "DV",
+            "time": "00:56:29",
+            "transcript": "Not by you."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:56:32",
+            "transcript": "Well, domestically  Hayes & Scott were supreme and they had houses going up over the place ? very, very, distinctive style.  Conrad & Gargett were the biggest firm, they did hospitals and commercial buildings.  The other firms ? the other large firms -  I just can?t think for the moment."
+        },
+        {
+            "speaker": "DV",
+            "time": "00:57:06",
+            "transcript": "No particular buildings stand out in your mind?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:57:09",
+            "transcript": "Well, we had our office in city buildings in Edward Street, it?s been replaced now, but across the road on the corner from the office was a big insurance building, which is still there, and that was probably the most modern building at the time and I just watched it?s construction out of the window of our office and I used to marvel at it.  Now, what was the question again?"
+        },
+        {
+            "speaker": "DV",
+            "time": "00:57:48",
+            "transcript": "Well, any particular building that stands out for you from that period."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:57:51",
+            "transcript": "Well, that?s one that I remember.  The work of Hayes & Scott I remember very well because they were dotted all around, particularly around St Lucia, a lot of houses there."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:58:14",
+            "transcript": "What about John Hitch, I guess, you were taught by John Hitch?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:58:17",
+            "transcript": "Yes.  Well, John Hitch went into partnership with Theo Thynne.  John Hitch I regarded as a very good tutor.  Not regarded as a very friendly person, a bit aloof and - - -"
+        },
+        {
+            "speaker": "AW",
+            "time": "00:58:44",
+            "transcript": "He was an interesting character because he came from London and took up a position with the Public Works Department."
+        },
+        {
+            "speaker": "BW",
+            "time": "00:58:52",
+            "transcript": "In Brisbane?"
+        },
+        {
+            "speaker": "AW",
+            "time": "00:58:53",
+            "transcript": "In Brisbane, so he very quickly did some large buildings in the region, was that known when you were?"
+        },
+        {
+            "speaker": "BW",
+            "time": "00:59:00",
+            "transcript": "I wasn?t aware of that.  In fact, I first became aware of John Hitch when he started lecturing down at the university and, a year above men, were mostly ex servicemen and they?d been through a lot I think.  Including had flown in the RAF in Germany and John Hitch turned up one day wearing a blazer with air force on it.  These fellows, they just couldn?t stand it anymore and they gave him hell.  They were the same age virtually.   I thought he was very ? he had a lot to teach and I got a lot from him."
+        },
+        {
+            "speaker": "AW",
+            "time": "00:59:58",
+            "transcript": "He distributed Danish lights here in Brisbane."
+        },
+        {
+            "speaker": "BW",
+            "time": "01:00:02",
+            "transcript": "I wasn?t aware ? I think I knew that but, I think his wife was involved in that."
+        },
+        {
+            "speaker": "AW",
+            "time": "01:00:09",
+            "transcript": "Yes, that?s right, yeah.  What about Karl Langer?  I guess Karl - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "01:00:15",
+            "transcript": "Yes.  Well, Karl had his office just up here and Karl lived at St Lucia."
+        },
+        {
+            "speaker": "AW",
+            "time": "01:00:22",
+            "transcript": "How did you and your colleagues regard his work?"
+        },
+        {
+            "speaker": "BW",
+            "time": "01:00:26",
+            "transcript": "Well, my father didn?t have a kind word to say about Karl and I think it was jealousy more than anything.  Because, Karl arrived on the scene and knew everything, which offended local people and talked about climate control and things like that, which, the local people knew all about anyway and he treated it as something that was a new science.  He lectured us in town planning and I found him okay.  He ruffled a few feathers though."
+        },
+        {
+            "speaker": "AW",
+            "time": "01:01:18",
+            "transcript": "You mentioned that Professor Cummings gave you your reference for London, how would you view his importance for the local architectural culture?"
+        },
+        {
+            "speaker": "BW",
+            "time": "01:01:31",
+            "transcript": "Well, it was ? he designed, in association with [01:01:37] for important buildings, mainly the Christian Science Churches.  I just regarded them as sort of impeccable design.  But I knew him mostly as an academic and we, sort of, us degree students had a very close tie in with Bob Cummings and Bruce Lucas."
+        },
+        {
+            "speaker": "AW",
+            "time": "01:02:16",
+            "transcript": "So, he had quite a broad sphere of influence from teaching through practice and also with his role in the institute."
+        },
+        {
+            "speaker": "BW",
+            "time": "01:02:25",
+            "transcript": "Yes, he was the president of the Queensland Chapter at one time.  Thinking about those years, it?s not easy, but yeah, so I regarded him highly."
+        },
+        {
+            "speaker": "AW",
+            "time": "01:02:40",
+            "transcript": "Yeah.  No, that?s all I just wanted to check - - -"
+        },
+        {
+            "speaker": "BW",
+            "time": "01:02:43",
+            "transcript": "And his wife."
+        },
+        {
+            "speaker": "AW",
+            "time": "01:02:44",
+            "transcript": "- - -what your opinion was, based on your  experience."
+        },
+        {
+            "speaker": "BW",
+            "time": "01:02:47",
+            "transcript": "We?d go out to their place and play charades."
+        },
+        {
+            "speaker": "AW",
+            "time": "01:02:50",
+            "transcript": "Yes, it sounds like fun."
+        },
+        {
+            "speaker": "BW",
+            "time": "01:02:53",
+            "transcript": "Just the degree students, not these lowly diploma students."
+        },
+        {
+            "speaker": "DV",
+            "time": "01:02:56",
+            "transcript": "Poor things."
+        },
+        {
+            "speaker": "AW",
+            "time": "01:02:57",
+            "transcript": "Clear separation, that?s good."
+        },
+        {
+            "speaker": "DV",
+            "time": "01:03:02",
+            "transcript": "I?m just wondering if Beth had any contact with Karl Langer, through the connection on the landscape?"
+        },
+        {
+            "speaker": "BW",
+            "time": "01:03:08",
+            "transcript": "Beth had a lot to do with Karl.  I can?t tell you the details, however, if you?d like to ask her."
+        },
+        {
+            "speaker": "DV",
+            "time": "01:03:18",
+            "transcript": "Looks like we?ll have to line up another interview."
+        },
+        {
+            "speaker": "BW",
+            "time": "01:03:20",
+            "transcript": "I?ll just go up and see what her availability is if you like."
+        },
+        {
+            "speaker": "DV",
+            "time": "01:03:23",
+            "transcript": "We could do that after, yeah."
+        },
+        {
+            "speaker": "BW",
+            "time": "01:03:26",
+            "transcript": "When we finish."
+        },
+        {
+            "speaker": "DV",
+            "time": "01:03:27",
+            "transcript": "Yeah, we?ll just finish up.  We?ve been going for an hour so we will finish up.  I think everyone is wanting a bit of a break, but, I suppose on the last question, I?m, sort of, interested in seeing how you think your practice compares to that of your father and grandfather and if there?s been any key significant shifts you think over the time?"
+        },
+        {
+            "speaker": "BW",
+            "time": "01:03:50",
+            "transcript": "Well there is and it?s just a bit hard to define the difference, but, my grandfather was an architect trained in the Public Works Department and he went overseas and got his ARIBA while he was there and he was the architect for the Presbyterian Church in Queensland and I only knew him when I was five and six ? he was a gruff old man and I kept out of the way of, but I?ve read some of his writings and some of the writings have been extraordinary poetic, which surprised me.  So, that?s very little contact with him."
+        },
+        {
+            "speaker": "BW",
+            "time": "01:04:50",
+            "transcript": "My father, I think he studied engineering and he was the first ? awarded the first Master of Engineering a the University of Queensland and by the time I was at the university there was only about three or four people that had been awarded it.  And, he won this award [01:05:14] that took him overseas and I think that the fact that he was trained as an engineer and practiced as an architect, I didn?t think made him very popular amongst other architects.  I don?t know, but I just suspect there was something ? some professional strain between him and his colleagues."
+        },
+        {
+            "speaker": "BW",
+            "time": "01:05:50",
+            "transcript": "He had a few colleagues that he seemed to get on well with, Karl Langer was one.  Arthur Bligh ? no, that go getter.  Yeah."
+        },
+        {
+            "speaker": "DV",
+            "time": "01:06:13",
+            "transcript": "So, your practice in relation to theirs, how do you think that it shifted?  Do you think it shifted?"
+        },
+        {
+            "speaker": "BW",
+            "time": "01:06:17",
+            "transcript": "What, this practice?"
+        },
+        {
+            "speaker": "DV",
+            "time": "01:06:19",
+            "transcript": "Well, your own work at the time?  Did you take the practice in different direction.  Do different type of work?"
+        },
+        {
+            "speaker": "BW",
+            "time": "01:06:25",
+            "transcript": "I think probably I did.  I think I got ? see, by the time I came into the practice in 1955 ? 1956, my father was in his mid 60s and had been working alone virtually and he had a few pretty key clients and he wasn?t regarded as the flavour of the month, as others would have been at the time.  He stayed reliable, that type of thing and when I came in ? rightly or wrongly ? when people so this, well here?s a breath of fresh air that?s going to make a difference."
+        },
+        {
+            "speaker": "BW",
+            "time": "01:07:22",
+            "transcript": "So, he, you know, I think he was sort of [01:07:34] in those years.   Especially in the 20s , when he was a town planning advocate and involved in town planning committees in the city and was quoted in the paper every second week, you know, that sort of thing and he enjoyed that very much."
+        },
+        {
+            "speaker": "DV",
+            "time": "01:07:55",
+            "transcript": "So, he was quite actively involved in the debates and is that something you?ve continued?"
+        },
+        {
+            "speaker": "BW",
+            "time": "01:08:03",
+            "transcript": "No, not really."
+        },
+        {
+            "speaker": "DV",
+            "time": "01:08:03",
+            "transcript": "You?ve stayed out of the debates?"
+        },
+        {
+            "speaker": "BW",
+            "time": "01:08:03",
+            "transcript": "No, well probably I was, back in the ?60s and ?70s when I was an angry young man.  But I always look for the quiet life now."
+        },
+        {
+            "speaker": "DV",
+            "time": "01:08:16",
+            "transcript": "And, I suppose, just  to finish up on, the practice obviously still continues, under your son,  do you think your practice has had any particular impact on Queensland architecture today, or any particular influence?"
+        },
+        {
+            "speaker": "BW",
+            "time": "01:08:36",
+            "transcript": "It?s hard to say, I thinks someone else has got to recognise that, but I ? we?ve been fairly constant in the quality of work that we?ve done, it?s not ? we?ve some awards, not many and out client base has been pretty loyal, as I say we?re not breaking new ground.  Well, I think Hamilton might, more than I ever did."
+        },
+        {
+            "speaker": "DV",
+            "time": "01:09:12",
+            "transcript": "All right, I think ? anymore?"
+        },
+        {
+            "speaker": "AW",
+            "time": "01:09:15",
+            "transcript": "That?s terrific Blair, thanks very much."
+        },
+        {
+            "speaker": "DV",
+            "time": "01:09:18",
+            "transcript": "Thank you.  It has been very good, very interesting"
+        },
+        {
+            "speaker": "BW",
+            "time": "01:09:21",
+            "transcript": "Do you want a word with Beth or not?"
+        },
+        {
+            "speaker": "DV",
+            "time": "01:09:22",
+            "transcript": "That would be - - -"
+        }
+    ]
+}
