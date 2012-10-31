@@ -3,3 +3,4 @@ dep/
 build/
 tags
 html/
+tmp/
