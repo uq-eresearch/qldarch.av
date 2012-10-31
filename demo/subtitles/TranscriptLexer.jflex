@@ -23,6 +23,14 @@ import java.util.List;
             this.utterance = null;
         }
 
+        public void appendUtterance(String utterance) {
+            if (this.utterance == null) {
+                this.utterance = utterance;
+            } else {
+                this.utterance = this.utterance + " " + utterance;
+            }
+        }
+
         public String speaker;
         public String timestamp;
         public String utterance;
@@ -142,6 +150,7 @@ Timestamp = [:digit:][:digit:]":"[:digit:][:digit:]":"[:digit:][:digit:]
 
                             if (currentUtterance != null && currentUtterance.utterance == null)
                                 throw new IllegalStateException("Error at line " + yyline +
+                                    "(" + yytext() + ")" +
                                     ": New utterance detected before old utterance completed");
 
                             currentUtterance = new Utterance(currentSpeaker, yytext().trim());
@@ -151,14 +160,11 @@ Timestamp = [:digit:][:digit:]":"[:digit:][:digit:]":"[:digit:][:digit:]
     {Utterance}         {
                             if (yytext().trim().equals("END OF TRANSCRIPT")) {
                                 yybegin(FINISHED);
-                            } else if (currentUtterance.utterance != null) {
-                                throw new IllegalStateException("Error at line " + yyline +
-                                    ": Multiple utterances found for single utterance.");
                             } else {
                                 String utterance = yytext().trim();
                                 utterance = utterance.replace("\"", "\\\"");
                                 utterance = utterance.replace("\\s\\s*", " ");
-                                currentUtterance.utterance = utterance;
+                                currentUtterance.appendUtterance(utterance);
                             }
                         }
 
