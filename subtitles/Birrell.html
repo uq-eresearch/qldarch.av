@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <script src="./popcorn-complete.min.js" type="text/javascript"></script>
+    <script src="./jquery-1.7.2.min.js" type="text/javascript"></script>
+    <title>Subtitled Interview Interface</title>
+  </head>
+  <body>
+    <!-- change -->
+    <h1 id="title"></h1>
+    <div id="date"></div>
+    <div style="padding:1em">
+        <audio controls="controls" id="ourvideo">
+          <source src="./Birrell_JM_and_AW.mp3" type="audio/mp3">
+          <source src="./Birrell_JM_and_AW.ogg" type="audio/ogg">
+        </audio>
+        <div id="subtitles" style="border:1px solid black;width:500px;height:500px;overflow:hidden"></div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var speakers;
+        $.getJSON("./Birrell_Speakers.json", function(data) {
+            speakers = data;
+        });
+
+        var subs = $("#subtitles");
+
+        function subtitleUpdater(jqElement, index, offset, show) {
+            var toppos = jqElement.position().top - offset;
+            return function(options) {
+                if (show) {
+                    jqElement.animate({"opacity": "1.0"});
+                    subs.animate({"scrollTop": toppos - 50}, function() { jqElement.animate({"opacity": "1.0"}); });
+                } else {
+                    subs.stop();
+                    jqElement.animate({"opacity": "0.5"});
+                }
+            };
+        }
+
+        $.getJSON("./Birrell.json", function(data) {
+            $("#title").text(data.title);
+            $("#date").text(data.date);
+
+            var popcorn = Popcorn("#ourvideo");
+            for (var i = 0; i < data.exchanges.length; i++) {
+                var curr = data.exchanges[i];
+                var next = data.exchanges[i+1];
+
+                var start = Math.max(0.5, Popcorn.util.toSeconds(curr.time)) - 0.5;
+                var end = next ? Popcorn.util.toSeconds(next.time) - 0.5 : popcorn.duration();
+
+                var speakerdiv = $('<div class="speaker" />').text(curr.speaker);
+                var speechdiv = $('<div class="speech" />').text(curr.transcript);
+
+                var subtitlediv = $('<div class="subtitle" style="display:block;opacity:0.5"/>');
+                subtitlediv.data("start", start).data("end", end);
+                subtitlediv.append(speakerdiv).append(speechdiv);
+
+                subs.append(subtitlediv);
+
+                console.log("subs offset: " + subs.position().top);
+                popcorn.code({
+                    start: start,
+                    end: end,
+                    onStart: subtitleUpdater(subtitlediv, i, subs.position().top, true),
+                    onEnd: subtitleUpdater(subtitlediv, i, subs.position().top, false)
+                });
+            }
+
+            popcorn.play();
+        });
+
+    });
+    </script>
+  </body>
+</html>
