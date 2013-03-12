@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="qldarch.av">
+    <property name="project.name" value="TransciptToJson"/>
+    <property name="project.version" value="0.9.0"/>
+    <property name="src" location="src"/>
+    <property name="generated" location="generated"/>
+    <property name="build" location="build"/>
+    <property name="lib" location="lib"/>
+    <property name="src.main.java" location="${src}/main/java"/>
+    <property name="src.main.jflex" location="${src}/main/jflex"/>
+    <property name="src.generated.java" location="${generated}/java"/>
+    <property name="src.test.java" location="${src}/test/java"/>
+    <property name="src.test.resources" location="${src}/test/resources"/>
+    <property name="build.main.java" location="${build}/jvm/classes"/>
+    <property name="build.test.java" location="${build}/test/classes"/>
+    <property name="dist"  location="dist"/>
+    <property name="test.dir" location="test"/>
+    <property name="reports.dir" location="${test.dir}/reports"/>
+
+    <taskdef name="jflex" classname="JFlex.anttask.JFlexTask" onerror="report">
+        <classpath>
+            <pathelement location="${lib}/JFlex.jar"/>
+        </classpath>
+    </taskdef>
+    <taskdef name="one-jar" classname="com.simontuffs.onejar.ant.OneJarTask" onerror="report">
+        <classpath>
+            <pathelement location="${lib}/build/one-jar-ant-task-0.97.jar"/>
+        </classpath>
+    </taskdef>
+    <!--
+    <import optional="true">
+        <javaresource name="one-jar-ant-task.xml"
+            classpath="${lib}/build/one-jar-ant-task-0.97.jar"/>
+    </import>
+    -->
+    <taskdef resource="net/sf/antcontrib/antlib.xml">
+        <classpath>
+            <pathelement location="${lib}/build/ant-contrib-1.0b3.jar" />
+        </classpath>
+    </taskdef>
+
+    <path id="classpath.compile">
+        <fileset dir="${lib}">
+            <include name="**/*.jar"/>
+            <exclude name="test/**.jar"/>
+            <exclude name="build/**.jar"/>
+        </fileset>
+    </path>
+
+    <target name="all" depends="init,generate,compile,dist"/>
+
+    <target name="clean">
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+    </target>
+
+    <target name="init">
+        <echo message="Compiling as ${user.name}" />
+        <mkdir dir="${build.main.java}"/>
+        <mkdir dir="${build.test.java}"/>
+        <mkdir dir="${src.generated.java}"/>
+        <mkdir dir="${dist}"/>
+        <mkdir dir="${test.dir}"/>
+        <mkdir dir="${reports.dir}"/>
+    </target>
+
+    <target name="generate">
+        <foreach target="generate-jflex" param="jflex.file">
+            <path>
+                <fileset dir="${src.main.jflex}">
+                    <include name="**/*.jflex"/>
+                </fileset>
+            </path>
+        </foreach>
+    </target>
+
+    <target name="generate-jflex">
+        <jflex file="${jflex.file}" destdir="${src.generated.java}" />
+    </target>
+
+    <target name="compile" depends="init">
+        <pathconvert pathsep="${line.separator}" property="classpath.compile.prop" refid="classpath.compile" />
+        <echo message="Compling with classpath=${classpath.compile.prop}" />
+        <javac classpathref="classpath.compile" 
+            destdir="${build.main.java}"
+            deprecation="on"
+            debug="true"
+            includeantruntime="false">
+            <src path="${src.main.java}"/>
+            <src path="${src.generated.java}"/>
+        </javac>
+    </target>
+
+    <target name="dist" depends="compile">
+        <one-jar destfile="${dist}/${project.name}-${project.version}.jar" index="true">
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>
+                <attribute name="One-Jar-Main-Class" value="net.qldarch.av.parser.TranscriptLexer"/>
+            </manifest>
+            <main>
+                <fileset dir="${build.main.java}">
+                    <include name="**/*.class"/>
+                </fileset>
+            </main>
+            <lib>
+                <fileset dir="${lib}">
+                    <include name="**/*.jar"/>
+                    <exclude name="test/**.jar"/>
+                    <exclude name="build/**.jar"/>
+                </fileset>
+            </lib>
+        </one-jar>
+        <copy file="${dist}/${project.name}-${project.version}.jar" tofile="${dist}/${project.name}.jar" />
+    </target>
+</project>

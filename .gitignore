@@ -4,3 +4,5 @@ build/
 tags
 html/
 tmp/
+dist/
+generated/

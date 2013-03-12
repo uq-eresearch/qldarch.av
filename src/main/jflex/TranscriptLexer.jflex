@@ -1,6 +1,7 @@
 /**
  * Lexer for generation of transcript json from transcripts.
  */
+package net.qldarch.av.parser;
 
 import java.io.PrintStream;
 import java.util.ArrayList;
@@ -9,6 +10,7 @@ import java.util.List;
 %%
 
 %class TranscriptLexer
+%public
 %unicode
 %line
 %column
