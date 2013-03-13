@@ -66,11 +66,15 @@ import java.util.List;
     }
 
     private void printFieldValue(PrintStream out, String value) {
-        out.printf("\"%s\"", value);
+        out.printf("\"%s\"", cleanString(value));
     }
 
     private void printObjectComma(PrintStream out) {
         out.println(",");
+    }
+
+    private String cleanString(String value) {
+        return value.replaceAll("\ufeff", "").replaceAll("\t\n\r\f", " ");
     }
 
     private void printJson(PrintStream out) {

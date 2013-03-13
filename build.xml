@@ -78,7 +78,7 @@
         <jflex file="${jflex.file}" destdir="${src.generated.java}" />
     </target>
 
-    <target name="compile" depends="init">
+    <target name="compile" depends="init,generate">
         <pathconvert pathsep="${line.separator}" property="classpath.compile.prop" refid="classpath.compile" />
         <echo message="Compling with classpath=${classpath.compile.prop}" />
         <javac classpathref="classpath.compile" 
