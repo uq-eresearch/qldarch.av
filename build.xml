@@ -27,12 +27,6 @@
             <pathelement location="${lib}/build/one-jar-ant-task-0.97.jar"/>
         </classpath>
     </taskdef>
-    <!--
-    <import optional="true">
-        <javaresource name="one-jar-ant-task.xml"
-            classpath="${lib}/build/one-jar-ant-task-0.97.jar"/>
-    </import>
-    -->
     <taskdef resource="net/sf/antcontrib/antlib.xml">
         <classpath>
             <pathelement location="${lib}/build/ant-contrib-1.0b3.jar" />
