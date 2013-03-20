@@ -86,17 +86,20 @@
         </javac>
     </target>
 
-    <target name="dist" depends="compile">
+    <target name="jar" depends="compile">
+        <jar destfile="${dist}/${project.name}-${project.version}.jar" index="true">
+            <fileset dir="${build.main.java}">
+                <include name="**/*.class"/>
+            </fileset>
+        </jar>
+    </target>
+    <target name="dist" depends="jar">
         <one-jar destfile="${dist}/${project.name}-${project.version}-one-jar.jar" index="true">
             <manifest>
                 <attribute name="Built-By" value="${user.name}"/>
                 <attribute name="One-Jar-Main-Class" value="net.qldarch.av.parser.TranscriptParserMain"/>
             </manifest>
-            <main>
-                <fileset dir="${build.main.java}">
-                    <include name="**/*.class"/>
-                </fileset>
-            </main>
+            <main jar="${dist}/${project.name}-${project.version}.jar" />
             <lib>
                 <fileset dir="${lib}">
                     <include name="**/*.jar"/>
