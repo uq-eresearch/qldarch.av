@@ -45,6 +45,7 @@
 
     <target name="clean">
         <delete dir="${build}"/>
+        <delete dir="${generated}"/>
         <delete dir="${dist}"/>
     </target>
 
@@ -86,10 +87,10 @@
     </target>
 
     <target name="dist" depends="compile">
-        <one-jar destfile="${dist}/${project.name}-${project.version}.jar" index="true">
+        <one-jar destfile="${dist}/${project.name}-${project.version}-one-jar.jar" index="true">
             <manifest>
                 <attribute name="Built-By" value="${user.name}"/>
-                <attribute name="One-Jar-Main-Class" value="net.qldarch.av.parser.TranscriptLexer"/>
+                <attribute name="One-Jar-Main-Class" value="net.qldarch.av.parser.TranscriptParserMain"/>
             </manifest>
             <main>
                 <fileset dir="${build.main.java}">

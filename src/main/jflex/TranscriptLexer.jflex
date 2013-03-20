@@ -9,12 +9,13 @@ import java.util.List;
 
 %%
 
-%class TranscriptLexer
+%class TranscriptParser
 %public
 %unicode
 %line
 %column
-%standalone
+%function parse
+%type TranscriptParser
 
 %{
     // This is verbatim code for the TranscriptLexer class.
@@ -33,15 +34,24 @@ import java.util.List;
             }
         }
 
-        public String speaker;
-        public String timestamp;
-        public String utterance;
-    };
-    public static final String INDENT = "    ";
+        private String speaker;
+        private String timestamp;
+        private String utterance;
 
-    public String title;
-    public String date;
-    public List<Utterance> interview = new ArrayList<Utterance>();
+        public String getSpeaker() { return speaker; }
+        public String getTimestamp() { return timestamp; }
+        public String getUtterance() { return utterance; }
+    };
+
+    private static final String INDENT = "    ";
+
+    private String title;
+    private String date;
+    private List<Utterance> interview = new ArrayList<Utterance>();
+
+    public String getTitle() { return title; }
+    public String getDate() { return date; }
+    public List<Utterance> getInterview() { return interview; }
 
     private String currentSpeaker = null;
     private Utterance currentUtterance = null;
@@ -77,7 +87,7 @@ import java.util.List;
         return value.replaceAll("\ufeff", "").replaceAll("\t\n\r\f", " ");
     }
 
-    private void printJson(PrintStream out) {
+    public void printJson(PrintStream out) {
         out.println("{");
         printFieldC(out, 1, "title", title);
         printFieldC(out, 1, "date", date);
@@ -175,9 +185,7 @@ Timestamp = [:digit:][:digit:]":"[:digit:][:digit:]":"[:digit:][:digit:]
                         }
 
     <<EOF>>             {
-                            printJson(System.out);
-                            System.out.flush();
-                            System.exit(0);
+                            return this;
                         }
 
     .|\n                {
@@ -187,10 +195,12 @@ Timestamp = [:digit:][:digit:]":"[:digit:][:digit:]":"[:digit:][:digit:]
 }
 
 <FINISHED> {
-    .|\n                { /* Ignore everything, we are finished. */ }
+    .|\n                {
+                            yyclose();
+                            return this;
+                        }
+
     <<EOF>>             {
-                            printJson(System.out);
-                            System.out.flush();
-                            System.exit(0);
+                            return this;
                         }
 }
