@@ -119,16 +119,22 @@ import java.util.List;
 
 LineTerminator  = \r|\n|\r\n
 Whitespace      = [ \t\f]
-Initials        = [:letter:][:letter:]
+Initials        = [:uppercase:][:uppercase:]
 NotWS           = [^ \r\n\t\f]
 LineContents    = [^\r\n]
-StartUtterance  = [^ \r\n\t\f0-9]
 EndUtterance    = {NotWS}
-Utterance       = {StartUtterance}|{StartUtterance}{LineContents}*{EndUtterance}
-Timestamp = [:digit:][:digit:]":"[:digit:][:digit:]":"[:digit:][:digit:]
+Utterance       = {LineContents}*{EndUtterance}
+Timestamp       = [:digit:][:digit:]":"[:digit:][:digit:]":"[:digit:][:digit:]
+EndOfTranscript = [eE][nN][dD]" "[oO][fF]" "[tT][rR][aA][nN][sS][cC][rR][iI][pP][tT]
+LowerFirst      = [:lowercase:]{NotWS}
+LowerSecond     = {NotWS}[:lowercase:]
+FollowOn        = {LowerFirst}|{LowerSecond} {LineContents}*
 
 %state DATE
-%state INTERVIEW
+%state EXPECT_SPEAKER
+%state EXPECT_TIMESTAMP
+%state EXPECT_UTTERANCE
+%state EXPECT_SPEAKER_TIMESTAMP_OR_FOLLOWON
 %state FINISHED
 
 %%
@@ -146,18 +152,32 @@ Timestamp = [:digit:][:digit:]":"[:digit:][:digit:]":"[:digit:][:digit:]
     {Whitespace}        { /* Ignore whitespace */ }
     {LineTerminator}    { /* Ignore line endings */ }
     {LineContents}+     {
-                            yybegin(INTERVIEW);
+                            yybegin(EXPECT_SPEAKER);
                             date = yytext();
                         }
 }
-    
-<INTERVIEW> {
+
+<EXPECT_SPEAKER> {
     {Whitespace}        { /* Ignore whitespace */ }
     {LineTerminator}    { /* Ignore line endings */ }
 
-    {Initials}          {
+    ^{Initials}         {
                             currentSpeaker = yytext();
+                            yybegin(EXPECT_TIMESTAMP);
                         }
+
+    {EndOfTranscript}   {
+                            yybegin(FINISHED);
+                        }
+
+    <<EOF>>             {
+                            return this;
+                        }
+}
+
+<EXPECT_TIMESTAMP> {
+    {Whitespace}        { /* Ignore whitespace */ }
+    {LineTerminator}    { /* Ignore line endings */ }
 
     {Timestamp}         {
                             if (currentSpeaker == null)
@@ -171,29 +191,81 @@ Timestamp = [:digit:][:digit:]":"[:digit:][:digit:]":"[:digit:][:digit:]
 
                             currentUtterance = new Utterance(currentSpeaker, yytext().trim());
                             interview.add(currentUtterance);
+                            yybegin(EXPECT_UTTERANCE);
                         }
 
+    <<EOF>>             {
+                            throw new IllegalStateException("Error at line " + yyline +
+                                ": Unexpected end-of-file. Incomplete transcription for " +
+                                "Speaker(" + currentSpeaker + ")");
+                        }
+
+    .                   {
+                            throw new IllegalStateException("Invalid timestamp (" + yytext() +
+                                ") at " + yyline + ", column " + yycolumn);
+                        }
+}
+
+<EXPECT_UTTERANCE> {
+    {Whitespace}        { /* Ignore whitespace */ }
+    {LineTerminator}    { /* Ignore line endings */ }
+
     {Utterance}         {
-                            if (yytext().trim().equals("END OF TRANSCRIPT")) {
-                                yybegin(FINISHED);
-                            } else {
-                                String utterance = yytext().trim();
-                                utterance = utterance.replace("\"", "\\\"");
-                                utterance = utterance.replace("\\s\\s*", " ");
-                                currentUtterance.appendUtterance(utterance);
-                            }
+                            String utterance = yytext().trim();
+                            utterance = utterance.replace("\"", "\\\"");
+                            utterance = utterance.replace("\\s\\s*", " ");
+                            currentUtterance.appendUtterance(utterance);
+                            yybegin(EXPECT_SPEAKER_TIMESTAMP_OR_FOLLOWON);
+                        }
+
+    <<EOF>>             {
+                            throw new IllegalStateException("Error at line " + yyline +
+                                ": Unexpected end-of-file. Incomplete transcription for " +
+                                "Speaker(" + currentUtterance.getSpeaker() + "@" +
+                                currentUtterance.getTimestamp() + ")");
+                        }
+}
+
+<EXPECT_SPEAKER_TIMESTAMP_OR_FOLLOWON> {
+    {Whitespace}        { /* Ignore whitespace */ }
+    {LineTerminator}    { /* Ignore line endings */ }
+
+    {Initials}         {
+                            currentSpeaker = yytext();
+                            yybegin(EXPECT_TIMESTAMP);
+                        }
+
+    {Timestamp}        {
+                            if (currentSpeaker == null)
+                                throw new IllegalStateException("Error at line " + yyline +
+                                    ": Utterance without current speaker");
+
+                            if (currentUtterance != null && currentUtterance.utterance == null)
+                                throw new IllegalStateException("Error at line " + yyline +
+                                    "(" + yytext() + ")" +
+                                    ": New utterance detected before old utterance completed");
+
+                            currentUtterance = new Utterance(currentSpeaker, yytext().trim());
+                            interview.add(currentUtterance);
+                            yybegin(EXPECT_UTTERANCE);
+                        }
+
+    {FollowOn}          {
+                            String utterance = yytext().trim();
+                            utterance = utterance.replace("\"", "\\\"");
+                            utterance = utterance.replace("\\s\\s*", " ");
+                            currentUtterance.appendUtterance(utterance);
+                        }
+
+    {EndOfTranscript}   {
+                            yybegin(FINISHED);
                         }
 
     <<EOF>>             {
                             return this;
                         }
-
-    .|\n                {
-                            throw new IllegalStateException("No interview found at line " +
-                                yyline + ", column " + yycolumn);
-                        }
 }
-
+    
 <FINISHED> {
     .|\n                {
                             yyclose();
