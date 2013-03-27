@@ -1,8 +1,8 @@
 .*.swp
-dep/
-build/
+/dep/
+/build/
 tags
-html/
-tmp/
-dist/
-generated/
+/html/
+/tmp/
+/dist/
+/generated/
