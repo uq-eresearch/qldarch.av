@@ -10,12 +10,13 @@ import java.util.List;
 %%
 
 %class TranscriptParser
+%implements ParserToJSON
 %public
 %unicode
 %line
 %column
 %function parse
-%type TranscriptParser
+%type ParserToJSON
 
 %{
     // This is verbatim code for the TranscriptLexer class.
