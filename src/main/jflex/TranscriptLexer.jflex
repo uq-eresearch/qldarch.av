@@ -130,7 +130,7 @@ import java.util.List;
 
 LineTerminator  = \r|\n|\r\n
 Whitespace      = [ \t\f]
-Initials        = [:uppercase:][:letter:]*" "?[:uppercase:]" "*(\r|\n)
+Initials        = [:uppercase:][:letter:]*{Whitespace}*[:uppercase:]{Whitespace}*(\r|\n)
 NotWS           = [^ \r\n\t\f]
 LineContents    = [^\r\n]
 EndUtterance    = {NotWS}
