@@ -17,6 +17,7 @@ import java.util.List;
 %column
 %function parse
 %type ParserToJSON
+%scanerror IllegalStateException
 
 %{
     // This is verbatim code for the TranscriptLexer class.
@@ -48,6 +49,7 @@ import java.util.List;
 
     private String title;
     private String date;
+    private String skip = "";
     private List<Utterance> interview = new ArrayList<Utterance>();
 
     public String getTitle() { return title; }
@@ -88,6 +90,14 @@ import java.util.List;
         return value.replaceAll("\ufeff", "").replaceAll("\t\n\r\f", " ");
     }
 
+    private void resetSkip() {
+        skip = "";
+    }
+
+    private void skipUnexpected(String str) {
+        this.skip = this.skip + str;
+    }
+
     public void printJson(PrintStream out) {
         out.println("{");
         printFieldC(out, 1, "title", title);
@@ -120,16 +130,18 @@ import java.util.List;
 
 LineTerminator  = \r|\n|\r\n
 Whitespace      = [ \t\f]
-Initials        = [:uppercase:][:uppercase:]
+Initials        = [:uppercase:][:letter:]*" "?[:uppercase:](\r|\n)
 NotWS           = [^ \r\n\t\f]
 LineContents    = [^\r\n]
 EndUtterance    = {NotWS}
 Utterance       = {LineContents}*{EndUtterance}
 Timestamp       = [:digit:][:digit:]":"[:digit:][:digit:]":"[:digit:][:digit:]
 EndOfTranscript = [eE][nN][dD]" "[oO][fF]" "[tT][rR][aA][nN][sS][cC][rR][iI][pP][tT]
+/*
 LowerFirst      = [:lowercase:]{NotWS}
 LowerSecond     = {NotWS}[:lowercase:]
 FollowOn        = {LowerFirst}|{LowerSecond} {LineContents}*
+*/
 
 %state DATE
 %state EXPECT_SPEAKER
@@ -163,6 +175,7 @@ FollowOn        = {LowerFirst}|{LowerSecond} {LineContents}*
     {LineTerminator}    { /* Ignore line endings */ }
 
     ^{Initials}         {
+                            yypushback(1);
                             currentSpeaker = yytext();
                             yybegin(EXPECT_TIMESTAMP);
                         }
@@ -178,7 +191,15 @@ FollowOn        = {LowerFirst}|{LowerSecond} {LineContents}*
 
 <EXPECT_TIMESTAMP> {
     {Whitespace}        { /* Ignore whitespace */ }
-    {LineTerminator}    { /* Ignore line endings */ }
+    {LineTerminator}    {
+                            if (!skip.isEmpty()) {
+                                throw new IllegalStateException("Invalid timestamp (" + skip +
+                                    ") at " + yyline + ", columns " + (yycolumn - skip.length()) +
+                                    "-" + yycolumn);
+                            } else {
+                                /* Ignore line endings */
+                            }
+                        }
 
     {Timestamp}         {
                             if (currentSpeaker == null)
@@ -192,18 +213,23 @@ FollowOn        = {LowerFirst}|{LowerSecond} {LineContents}*
 
                             currentUtterance = new Utterance(currentSpeaker, yytext().trim());
                             interview.add(currentUtterance);
+                            if (!skip.isEmpty()) {
+                                System.err.format(
+                                    "Found Timestamp %s at line %d, Skipped over %s\n" +
+                                    yytext().trim(), yycolumn, skip);
+                            }
+                            resetSkip();
                             yybegin(EXPECT_UTTERANCE);
                         }
 
     <<EOF>>             {
                             throw new IllegalStateException("Error at line " + yyline +
                                 ": Unexpected end-of-file. Incomplete transcription for " +
-                                "Speaker(" + currentSpeaker + ")");
+                                "Speaker(" + currentSpeaker + ") skipped: '" + skip + "'");
                         }
 
     .                   {
-                            throw new IllegalStateException("Invalid timestamp (" + yytext() +
-                                ") at " + yyline + ", column " + yycolumn);
+                            skipUnexpected(yytext());
                         }
 }
 
@@ -231,7 +257,8 @@ FollowOn        = {LowerFirst}|{LowerSecond} {LineContents}*
     {Whitespace}        { /* Ignore whitespace */ }
     {LineTerminator}    { /* Ignore line endings */ }
 
-    {Initials}         {
+    ^{Initials}        {
+                            yypushback(1);
                             currentSpeaker = yytext();
                             yybegin(EXPECT_TIMESTAMP);
                         }
@@ -251,7 +278,7 @@ FollowOn        = {LowerFirst}|{LowerSecond} {LineContents}*
                             yybegin(EXPECT_UTTERANCE);
                         }
 
-    {FollowOn}          {
+    {Utterance}          {
                             String utterance = yytext().trim();
                             utterance = utterance.replace("\"", "\\\"");
                             utterance = utterance.replace("\\s\\s*", " ");
