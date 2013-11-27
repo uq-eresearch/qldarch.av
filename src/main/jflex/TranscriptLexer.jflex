@@ -130,7 +130,7 @@ import java.util.List;
 
 LineTerminator  = \r|\n|\r\n
 Whitespace      = [ \t\f]
-Initials        = [:uppercase:][:letter:]*" "?[:uppercase:](\r|\n)
+Initials        = [:uppercase:][:letter:]*" "?[:uppercase:]" "*(\r|\n)
 NotWS           = [^ \r\n\t\f]
 LineContents    = [^\r\n]
 EndUtterance    = {NotWS}
@@ -176,7 +176,7 @@ FollowOn        = {LowerFirst}|{LowerSecond} {LineContents}*
 
     ^{Initials}         {
                             yypushback(1);
-                            currentSpeaker = yytext();
+                            currentSpeaker = yytext().trim();
                             yybegin(EXPECT_TIMESTAMP);
                         }
 
@@ -259,7 +259,7 @@ FollowOn        = {LowerFirst}|{LowerSecond} {LineContents}*
 
     ^{Initials}        {
                             yypushback(1);
-                            currentSpeaker = yytext();
+                            currentSpeaker = yytext().trim();
                             yybegin(EXPECT_TIMESTAMP);
                         }
 
