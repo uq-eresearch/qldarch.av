@@ -3,6 +3,11 @@
  */
 package net.qldarch.av.parser;
 
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.node.ArrayNode;
+import org.codehaus.jackson.node.JsonNodeFactory;
+import org.codehaus.jackson.node.ObjectNode;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -87,7 +92,7 @@ import java.util.List;
     }
 
     private String cleanString(String value) {
-        return value.replaceAll("\ufeff", "").replaceAll("\t\n\r\f", " ");
+        return value.replaceAll("\ufeff", "").replaceAll("\t|\n|\r|\f", " ");
     }
 
     private void resetSkip() {
@@ -98,33 +103,20 @@ import java.util.List;
         this.skip = this.skip + str;
     }
 
-    public void printJson(PrintStream out) {
-        out.println("{");
-        printFieldC(out, 1, "title", title);
-        printFieldC(out, 1, "date", date);
-        printIndent(out, 1);
-        printFieldLabel(out, "exchanges");
-        out.println("[");
-        boolean isFirst = true;
+    public void printJson(PrintStream out) throws IOException {
+        ObjectNode top = JsonNodeFactory.instance.objectNode();
+        top.put("title", cleanString(title));
+        top.put("date", cleanString(date));
+        ArrayNode utterances = JsonNodeFactory.instance.arrayNode();
         for (Utterance utterance : interview) {
-            if (isFirst) {
-                isFirst = false;
-            } else {
-                printObjectComma(out);
-            }
-            printIndent(out, 2);
-            out.println("{");
-            printFieldC(out, 3, "speaker", utterance.speaker);
-            printFieldC(out, 3, "time", utterance.timestamp);
-            printField(out, 3, "transcript", utterance.utterance);
-            out.println("");
-            printIndent(out, 2);
-            out.print("}");
+            ObjectNode entry = JsonNodeFactory.instance.objectNode();
+            entry.put("speaker", cleanString(utterance.speaker));
+            entry.put("time", cleanString(utterance.timestamp));
+            entry.put("transcript", cleanString(utterance.utterance));
+            utterances.add(entry);
         }
-        out.println("");
-        printIndent(out, 1);
-        out.println("]");
-        out.println("}");
+        top.put("exchanges", utterances);
+        new ObjectMapper().writerWithDefaultPrettyPrinter().writeValue(out, top);
     }
 %}
 
